@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { ChangeEvent, MouseEvent, useEffect, useState } from 'react';
 
-const login = () => {
+const Login = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(true);
@@ -119,4 +119,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
