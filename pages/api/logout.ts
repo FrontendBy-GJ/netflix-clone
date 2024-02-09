@@ -3,7 +3,10 @@ import { magicAdmin } from '@/lib/magic-link-server';
 import { verifyToken } from '@/lib/utils';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-export default async function (req: NextApiRequest, res: NextApiResponse) {
+export default async function logout(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   try {
     if (!req.cookies.token)
       return res.status(401).json({ message: 'User is not logged in' });
