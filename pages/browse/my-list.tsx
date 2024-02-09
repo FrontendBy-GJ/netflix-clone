@@ -1,17 +1,16 @@
 import MediaRow from '@/components/MediaRow';
 import Navbar from '@/components/Navbar';
 import { getMyListVideos } from '@/lib/db-api';
-import useRedirectUser from '@/utils/redirectUser';
+import { redirectUser } from '@/utils/redirectUser';
 import { GetServerSidePropsContext, PreviewData } from 'next';
 import Head from 'next/head';
 import { ParsedUrlQuery } from 'querystring';
 import { VideoProps } from '..';
-import { generateKey } from '@/utils/generateKey';
 
 export const getServerSideProps = async (
   context: GetServerSidePropsContext<ParsedUrlQuery, PreviewData>
 ) => {
-  const { token, userId } = await useRedirectUser(context);
+  const { token, userId } = await redirectUser(context);
 
   if (!userId) {
     return {

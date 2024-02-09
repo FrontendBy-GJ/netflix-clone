@@ -7,7 +7,7 @@ import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 
 import { getWatchAgainVideos } from '@/lib/db-api';
-import useRedirectUser from '@/utils/redirectUser';
+import { redirectUser } from '@/utils/redirectUser';
 
 export type VideoProps = {
   imgUrl: string;
@@ -18,7 +18,7 @@ export type VideoProps = {
 export const getServerSideProps: GetServerSideProps<{
   videos: VideoProps[];
 }> = async (context) => {
-  const { token, userId } = await useRedirectUser(context);
+  const { token, userId } = await redirectUser(context);
 
   if (!userId) {
     return {

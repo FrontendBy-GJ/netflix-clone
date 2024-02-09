@@ -2,7 +2,7 @@ import { verifyToken } from '@/lib/utils';
 import { GetServerSidePropsContext, PreviewData } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 
-const useRedirectUser = async (
+export const redirectUser = async (
   context: GetServerSidePropsContext<ParsedUrlQuery, PreviewData>
 ) => {
   const token = context.req ? context.req.cookies?.token : null;
@@ -14,5 +14,3 @@ const useRedirectUser = async (
 
   return { token, userId };
 };
-
-export default useRedirectUser;
