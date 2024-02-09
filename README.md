@@ -1,40 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Netflix Clone
+
+## Overview
+
+This project is a clone of Netflix, built as a demonstration of my frontend development skills. The application uses the YouTube API to fetch and display video content, and Magic Link for user authentication.
+
+## Features
+
+- Video streaming via the YouTube API
+- User authentication via Magic Link
+
+## Tools and Technologies Used
+
+- Frontend:
+  - React, TypeScript, Tailwind, Framer Motion
+- Backend:
+  - Hasura
+- Authentication:
+  - Magic Link, jsonwebtoken, cookie
+- Other Libraries:
+  - classnames, react-modal, jose
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository.
+2. Install the dependencies with `npm install`.
+3. Start the development server with `npm start`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Live Demo
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+You can view a live demo of the application at this [link]().
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## More About Me
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+You can learn more about my work and see other projects I've completed on my [Frontend Mentor profile](https://www.frontendmentor.io/profile/FrontendBy-GJ).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Screenshots
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Netflix clone login page](/screenshots/netflix-clone-login.png)
+![Magic Link check your email](/screenshots/magic-check-your-email.png)
+![Magic Link email](/screenshots/magic-email.png)
+![Netflix clone home page](/screenshots/netflix-clone-home.png)
+![Netflix clone categories-1](/screenshots/netflix-clone-categories-1.png)
+![Netflix clone categories-2](/screenshots/netflix-clone-categories-2.png)
+![Netflix clone video modal](/screenshots/netlfix-clone-video-modal.png)
+![Netflix clone my list](/screenshots/netflix-clone-my-list.png)
+![Netflix clone mobile view](/screenshots/netflix-clone-mobile-view.png)
