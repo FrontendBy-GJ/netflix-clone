@@ -1,11 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyToken } from '../lib/utils';
+import { verifyToken } from './lib/utils';
 
 export async function middleware(req: NextRequest) {
-  const token =
-    req && (req.cookies as unknown)
-      ? (req.cookies as unknown as { [key: string]: string })?.token
-      : null;
+  const token = req && req.cookies ? req.cookies.get('token')?.value : null;
 
   let userId;
 
