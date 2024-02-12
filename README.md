@@ -30,7 +30,7 @@ To get a local copy up and running, follow these steps:
 
 ## Live Demo
 
-You can view a live demo of the application at this [link]().
+You can view a live demo of the application at this [link](https://netflix-clone-eight-blush.vercel.app/login).
 
 ## More About Me
 
