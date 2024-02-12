@@ -85,11 +85,13 @@ export default function Home({
         />
 
         <MediaRow category="Sports" video={videos} cardSize="small" />
-        <MediaRow
-          category="Watch it again"
-          video={watchAgainVideos}
-          cardSize="small"
-        />
+        {watchAgainVideos.length > 0 && (
+          <MediaRow
+            category="Watch it again"
+            video={watchAgainVideos}
+            cardSize="small"
+          />
+        )}
         <MediaRow
           category="Technology"
           video={technologyVideos}
