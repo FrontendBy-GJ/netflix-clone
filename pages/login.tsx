@@ -8,7 +8,7 @@ import { ChangeEvent, MouseEvent, useEffect, useState } from 'react';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   const router = useRouter();
 
