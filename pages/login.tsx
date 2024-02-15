@@ -70,7 +70,7 @@ const Login = () => {
       <Head>
         <title>Netflix Signin</title>
       </Head>
-      <div className="bg-[url('/static/netflix-background.jpeg')] bg-no-repeat h-[100vh] z-50 relative after:absolute after:inset-0 after:-z-10 after:bg-stone-950 after:bg-opacity-70">
+      <div className="bg-[url('/static/netflix-background.jpeg')] bg-no-repeat h-[100vh] z-50 relative after:absolute after:inset-0 after:-z-10 after:bg-stone-950 after:bg-opacity-70 bg-cover">
         <header className="px-4 py-4 md:px-6">
           <div className="relative block h-10 w-28">
             <Image
